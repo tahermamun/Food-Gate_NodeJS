@@ -1,0 +1,57 @@
+<!-- include html head -->
+<%- include('../partials/header.ejs'); %>
+
+    <!-- include secondary hero section -->
+    <%- include('../partials/heroSectionSecondary.ejs'); %>
+
+
+
+        <!-- article page main section  start-->
+        <section class='pt-5'>
+            <div class=' article_page_container container'>
+
+                <!-- sidebar for all article page start -->
+                <div class="">
+                    <div class='d-flex mb-4'>
+                        <input class='form-control' type="text">
+                        <button class='btn btn-success'><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <h3 class='article_sidebar_title'>Categories</h3>
+                    <ul class='category_list p-0'>
+                        <li><a href="#"><i class="fas fa-arrow-circle-right"></i> Natural Food</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-circle-right"></i> Junk Food</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-circle-right"></i> Fast Food</a></li>
+                    </ul>
+
+
+                </div>
+                <!-- sidebar for all article page end -->
+
+                <!-- all article start -->
+                <div class=" all_article">
+                    <% Articles.forEach(article=>{%>
+                        <div class="card all_article_card" style="">
+                            <img src="images/featured_01.jpg" class="card-img-top all_article_card_image" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title all_article_title">Healthy natural Foood</h5>
+                                <p class="card-text all_article_description">Some quick example text to build on the
+                                    card
+                                    title and make up the bulk of
+                                    the card's content.</p>
+                                <a href="#" class="all_article_redmore">Read More</a>
+                            </div>
+                        </div>
+                        <% })%>
+                </div>
+                <!-- all article end -->
+
+
+            </div>
+        </section>
+        <!-- article page main section end-->
+
+
+
+        <!-- footer section include -->
+        <%- include('../partials/footer.ejs')%>

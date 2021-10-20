@@ -1,0 +1,111 @@
+<!-- user setting section start -->
+<section class="user_setting mt-3">
+    <!-- user setting left side start -->
+    <div>
+
+        <!-- new admin modal start -->
+        <div>
+            <button class="ms-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                New
+                Admin</button>
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content add_article_section_container">
+                        <div class="modal-body">
+                            <div class="add_article_section mt-3">
+                                <p>Admin<span> Create New</span></p>
+                                <div class="article_edit_section">
+                                    <form action="/admin/newAdmin" method="POST"
+                                        type="application/x-www-form-urlencoded" class="article_input_form">
+                                        <div class="form-group mt-3">
+                                            <label for="Name">Name</label><br>
+                                            <input name='name' class="form-control" type="text" id='name'
+                                                placeholder="Enter your full name">
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label for="Name">Email</label><br>
+                                            <input name="email" class="form-control" type="email" id='email'
+                                                placeholder="Enter Your Email">
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label for="Name">Password</label><br>
+                                            <input name='password' class="form-control" type="password" id='password'
+                                                placeholder="Enter Your password">
+                                        </div>
+
+                                        <input type="submit" class="submit_button mt-3" value="Create">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- new admin modal end -->
+
+        <!-- change admin credential start -->
+        <div class="add_article_section mt-3 ps-4">
+            <p>Change<span> Your Credential</span></p>
+            <div class="article_edit_section">
+                <form action="" class="article_input_form" type="application/x-www-form-urlencoded">
+                    <div class="form-group mt-3">
+                        <label for="Name">Your Email</label><br>
+                        <input class="form-control" disabled type="email" id='email' placeholder="Enter New Email">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="Name">Your Name</label><br>
+                        <input class="form-control" type="text" id='name' placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="Name">Your Password</label><br>
+                        <input class="form-control" type="password" id='password' placeholder="Enter New password">
+                    </div>
+
+                    <input type="submit" class="submit_button mt-3" value="Change">
+                </form>
+            </div>
+        </div>
+        <!-- change admin credential start -->
+    </div>
+    <!-- user setting left side end -->
+
+
+    <!-- user setting right side start -->
+    <div>
+        <!-- all admin table start -->
+        <div class="add_article_section mt-3">
+            <p>All Admin<span> Collection</span></p>
+            <div class="manage_data_section">
+
+                <table class="data_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td class="col-8">Mark</td>
+                            <td class="col-3">
+                                <!-- Button trigger modal -->
+                                <button class="submit_button">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- all admin table end -->
+        </div>
+        <!-- user setting right side end-->
+    </div>
+</section>
+<!-- user setting section end -->  

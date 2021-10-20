@@ -1,0 +1,56 @@
+.article_page_container {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 40px;
+}
+
+.all_article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.all_article_card {
+    border: none;
+}
+
+.all_article_card_image {
+    height: 200px;
+}
+
+.all_article_title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.all_article_description {
+    font-size: 15px;
+}
+
+.all_article_redmore {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* article sidebar */
+
+.article_sidebar_title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.category_list li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 2px solid gray;
+
+}
+
+.category_list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight:600;
+}

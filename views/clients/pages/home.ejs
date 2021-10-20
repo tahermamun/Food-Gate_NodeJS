@@ -1,0 +1,166 @@
+<!-- include html head -->
+<%- include('../partials/header.ejs'); %>
+
+
+    <!-- hero section start -->
+    <header>
+        <div class="owl-carousel owl-theme">
+            <div class="slide slide_1">
+                <div class="slide_content">
+                    <h1>Welcome To Mamzz</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptas eaque nobis ducimus
+                        voluptate molestiae corporis mollitia atque totam eligendi voluptatem vitae, quibusdam, vero
+                        delectus repudiandae tempore sint officiis odio.</p>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="slide slide_2">
+                <div class="slide_content">
+                    <h1>Your True Mamzz Navigator</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptas eaque nobis ducimus
+                        voluptate molestiae corporis mollitia atque totam eligendi voluptatem vitae, quibusdam, vero
+                        delectus repudiandae tempore sint officiis odio.</p>
+                    <button>Comment</button>
+                </div>
+            </div>
+            <div class="slide slide_3">
+                <div class="slide_content">
+                    <h1>Find Your Healthy Food</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptas eaque nobis ducimus
+                        voluptate molestiae corporis mollitia atque totam eligendi voluptatem vitae, quibusdam, vero
+                        delectus repudiandae tempore sint officiis odio.</p>
+                    <button>Like & Share</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- hero section end -->
+    ghf
+
+    <!-- feature section start -->
+    <section>
+        <div class='feature_card_container container'>
+
+
+            <div class="card bg-dark text-white feature_card">
+                <img src="images/featured_01.jpg" class="card-img feature_card_img" alt="...">
+                <div class="card-img-overlay feature_card_content">
+                    <h5 class="card-title feature_card_title">Healthy natural food</h5>
+                    <p class="card-text feature_card_descrition">This is a wider card with supporting text below as
+                        a
+                        natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white feature_card">
+                <img src="images/featured_02.jpg" class="card-img feature_card_img" alt="...">
+                <div class="card-img-overlay feature_card_content">
+                    <h5 class="card-title feature_card_title">Healthy natural food</h5>
+                    <p class="card-text feature_card_descrition">This is a wider card with supporting text below as
+                        a
+                        natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white feature_card">
+                <img src="images/featured_03.jpg" class="card-img feature_card_img" alt="...">
+                <div class="card-img-overlay feature_card_content">
+                    <h5 class="card-title feature_card_title">Healthy natural food</h5>
+                    <p class="card-text feature_card_descrition">This is a wider card with supporting text below as
+                        a
+                        natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- feature section end -->
+
+    <!-- feature section second start -->
+    <section class='container feature_second'>
+        <div class='row'>
+
+            <div class="col-md-6 feature_second_left">
+                <h1 class='feature_second_title'>Healthy and tasty foods with</h1>
+                <h2>natural ingredients</h2>
+                <p>Amet consectetur adipisicing elit. Reprehenderit quaerat eos fugit eligendi consectetur!
+                    Quibusdam
+                    deleniti facilis tempora dolorum perspiciatis molestias possimus quaerat. Est fuga voluptatibus
+                    ea
+                    animi tempore iusto soluta sint, quia incidunt quaerat repellendus porro nulla nesciunt nostrum.
+                </p>
+                <button class='button'>Read more</button>
+            </div>
+
+            <div class="col-md-3 feature_second_middle">
+                <img class='feature_second_img' src="images/health_bottle_featured.jpg" alt="">
+            </div>
+
+
+            <div class="col-md-3 feature_second_right">
+
+                <ul class='feature_second_ingre_list'>
+                    <li class="py-2">
+                        <i class="fas fa-check checked_icon"></i> Reduces weight
+                    </li>
+                    <li class="py-2">
+                        <i class="fas fa-check checked_icon"></i> Exact calorie content
+                    </li>
+                    <li class="py-2">
+                        <i class="fas fa-check checked_icon"></i> Improves health
+                    </li>
+                    <li class="py-2">
+                        <i class="fas fa-check checked_icon"></i> No sugar and gluten
+                    </li>
+                    <li class="py-2">
+                        <i class="fas fa-check checked_icon"></i> Adds strength and energy
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- feature section second end -->
+
+    <!-- artcle section start -->
+    <section>
+        <div class="container article_main_container">
+            <!--home page all article  section start-->
+            <div class="articles_section_left">
+
+
+
+                <% Articles.forEach(article=>{%>
+
+                    <div class="card article_card" style="">
+                        <img src="images/featured_01.jpg" class="card-img-top article_card_image" alt="...">
+                        <div class=" article_body">
+                            <h5 class="card-title article_title">Healthy natural Foood</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="article_redmore">Read More</a>
+                        </div>
+                    </div>
+
+                    <% })%>
+
+            </div>
+            <!--home page all article  section start-->
+
+            <!-- include main section right for home page -->
+            <%- include('../partials/article_sidebar_section_right.ejs'); %>
+        </div>
+    </section>
+    <!-- artcle section end -->
+<script>
+
+
+
+
+    
+</script>
+    <!-- footer section include -->
+    <%- include('../partials/footer.ejs')%>

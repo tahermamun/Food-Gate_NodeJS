@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+.zoomWrapper {
+  max-width: 400px;
+  overflow: hidden;
+  margin: 0 auto 40px auto;
+  /* -- Prevent flicker -- */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.zoomWrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.zoomWrapper img:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+@keyframes flash {
+  0%   { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.flasher{
+  animation: flash 300ms infinite;
+}

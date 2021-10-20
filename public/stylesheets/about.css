@@ -1,0 +1,98 @@
+.about_welcome {
+    margin-top: 80px;
+}
+
+.about_welcome_container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-gap: 70px;
+}
+
+.welcome_about_image {
+    width: 100%;
+    height: 100%;
+}
+
+.about_welcome_content h2 {
+    margin: 30px 0;
+    color: #FF0000;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.about_welcome_content h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.about_welcome_content p {
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.wel_button {
+    border-radius: 40px;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #FF0000;
+    border: none;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.about_welcome_content div {
+    font-size: 45px;
+    color: #8DBE38;
+    font-weight: 600;
+}
+
+.about_welcome_content div p {
+    font-size: 35px;
+    color: #000000;
+    display: inline;
+}
+
+/* newsletter start */
+
+.newsletter {
+    height: 190px;
+    margin: 120px 0;
+    background-color: #8DBE38;
+}
+
+.newsletter_container {
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr;
+    grid-gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter_book img {
+    margin-top: -15px;
+}
+
+/* newsletter end */
+/*  about successful section start */
+
+
+.about_successful {
+    margin-top: 80px;
+}
+
+.about_successful_container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-gap: 70px;
+}
+
+.about_successful_image {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*  about successful section end */

@@ -1,0 +1,276 @@
+/* external css imports  start*/
+
+/* bootstrap */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css");
+
+/* owl carousel */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css");
+/* external css imports  end*/
+
+
+/* internal css imports */
+
+@import 'jQueryStyleSheet/owl_carousel.css';
+@import 'jQueryStyleSheet/imageHoverEffect.css';
+@import 'articleSinglePage.css';
+@import 'footer.css';
+@import 'article.css';
+@import 'contact.css';
+@import 'about.css';
+/* global area start */
+
+:root {
+    --bgprimary: #ff0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* height: 8000px; */
+}
+
+.button {
+    border-radius: 40px;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #FF0000;
+    border: none;
+}
+
+/* global area end */
+
+/* navbar style start*/
+
+.nav_icon {
+    font-size: 36px;
+    color: rgb(13, 204, 61);
+    font-weight: 700;
+}
+
+.nav_links_ul {
+    margin: auto;
+}
+
+.nav_link_li {
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* navbar style end */
+
+/* feature section style start */
+
+.feature_card_container {
+    margin-top: -100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.feature_card {
+    border-radius: 20px;
+    border: none;
+    height: 380px;
+    z-index: 10;
+}
+
+.feature_card_img {
+    height: 380px;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+.feature_card_content {
+    margin-top: 220px;
+}
+
+.feature_card_title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* feature section end */
+
+/* featured second style  start*/
+
+.feature_second {
+    padding: 100px 0;
+}
+
+.feature_second .feature_second_left h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.feature_second .feature_second_left h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #8DBE38;
+}
+
+.feature_second_img {
+    height: 100%;
+    width: 100%;
+}
+
+.feature_second_ingre_list {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 50px;
+}
+
+.checked_icon {
+    color: #8DBE38;
+}
+
+/* featured second style  end*/
+
+/*  Article main section start*/
+
+.article_main_container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+}
+
+.articles_section_left {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+    padding-right: 70px;
+}
+
+.article_card_image {
+    height: 250px;
+}
+
+.article_redmore {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.article_title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.article_card {
+    border: none;
+    
+}
+
+
+/*  Article main section end*/
+
+/* article right section style start */
+
+/* author card start*/
+
+.author_card {
+    border: none;
+}
+
+.author_card_image {
+    height: 350px;
+}
+
+.author_title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.author_card_body h5 {
+    color: #8DBE38;
+}
+
+/* author card end*/
+
+/* favorite card start*/
+
+.fav_card {
+    border: none;
+}
+
+.fav_card_image {
+    /* margin: 20px 0 0 0; */
+    height: 70px;
+    width: 100%;
+}
+
+.fav_card_body {
+    padding: 5px;
+}
+
+.fav_redmore {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.fav_card_body h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* favorite card end*/
+
+/* interesting card start*/
+
+.interesting_card {
+    border: none;
+}
+
+.interesting_card_body {
+    border: none;
+    position: absolute;
+    top: 30%;
+}
+
+.interesting_card_image {
+    opacity: 0.7;
+}
+
+.interesting_card_image_box {
+    background-color: #000;
+}
+
+/* interesting card end*/
+
+/* explore card start*/
+
+.explore_card {
+    border: none;
+}
+
+.explore_card_body {
+    border: none;
+    position: absolute;
+    top: 30px;
+    left: 30%;
+}
+
+.explore_card_image {
+    opacity: 0.7;
+    height: 100px!important;
+    width: 500px!important;
+}
+
+.explore_card_image_box {
+    background-color: #000;
+}
+
+/* explore card end*/
+
+/* article right section style start */

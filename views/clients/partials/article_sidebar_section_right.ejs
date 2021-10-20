@@ -1,0 +1,106 @@
+<div class="article_sidebar_section_right">
+    <!-- author card start -->
+    <div class="card author_card" style="">
+        <img src="images/author_pic.jpeg" class="card-img-top author_card_image" alt="...">
+        <div class="card-body author_card_body text-center">
+            <h4 class="card-title author_title">Silly Taitro</h4>
+            <h5>FULLTIME HEALTH BLOGGER</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p>
+            <h2><i>Signature</i></h2>
+        </div>
+    </div>
+    <!-- author card end -->
+
+    <!-- favorite cards start -->
+    <div>
+
+        <div class="">
+            <h3>Top Recent Favorites __ </h3>
+        </div>
+
+        <% recent.forEach(article=>{%>
+            <div class="card fav_card mb-3" style="">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/featured_01.jpg" class="img-fluid fav_card_image" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="fav_card_body">
+                            <h5 class="">Healthy natural Foood</h5>
+                            <a href="#" class="fav_redmore">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% })%>
+
+
+
+
+
+    </div>
+    <!-- favorite cards end -->
+
+    <!-- interesting cards start -->
+    <div class="">
+        <div class="">
+            <h3>Interesting __ </h3>
+        </div>
+        <div class="card text-white interesting_card">
+            <div class="zoomWrapper interesting_card_image_box">
+                <img src="images/featured_01.jpg" class="card-img interesting_card_image" alt="...">
+            </div>
+            <div class=" interesting_card_body text-center">
+                <div>
+                    <p class="card-text">This is a wider card with supporting text below as a natural
+                        lead-in to</p>
+                    <button class="btn btn-success">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- interesting cards end -->
+
+    <!-- explore cards start -->
+    <div class="">
+        <div class="">
+            <h3>Explore _______ </h3>
+        </div>
+
+
+        <div class="card text-white explore_card">
+            <div class="zoomWrapper explore_card_image_box">
+                <img src="images/featured_01.jpg" class=" explore_card_image" alt="...">
+            </div>
+            <div class=" explore_card_body text-center">
+                <div>
+                    <button class="btn btn-light">BEST GRABES</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-white explore_card">
+            <div class="zoomWrapper explore_card_image_box">
+                <img src="images/featured_01.jpg" class=" explore_card_image" alt="...">
+            </div>
+            <div class=" explore_card_body text-center">
+                <div>
+                    <button class="btn btn-light">BEST VEGGIES</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-white explore_card">
+            <div class="zoomWrapper explore_card_image_box">
+                <img src="images/featured_01.jpg" class=" explore_card_image" alt="...">
+            </div>
+            <div class=" explore_card_body text-center">
+                <div>
+                    <button class="btn btn-light">BEST FRUITS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- explore cards end -->
+</div>

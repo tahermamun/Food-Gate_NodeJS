@@ -1,0 +1,21 @@
+.contact_page_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.contact_page_left h5{
+color: #8DBE38;
+}
+
+.contact_page_left .contact_title{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+

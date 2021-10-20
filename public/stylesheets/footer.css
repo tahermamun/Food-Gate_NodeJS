@@ -1,0 +1,35 @@
+
+/* footer style */
+
+.footer_section {
+    /* margin-top: 800px; */
+    background-image: url('../images/footer_bg.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    padding-top: 150px;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer_section_left p {
+    color: #fff;
+}
+
+.footer_icon {
+    color: #8DBE38;
+    list-style: none;
+    font-size: 45px;
+    padding: 10px;
+}
+
+
+.footer_section_middle{
+
+
+color: #fff;
+
+
+}

@@ -1,0 +1,168 @@
+<!-- article manage section start -->
+<div class="add_article_section mt-3">
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <!--  -->
+
+            <p>All Article<span> Data Table</span></p>
+            <div class="manage_data_section">
+
+                <table class="data_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <% Articles.forEach((article,index)=>{%>
+                            <tr>
+                                <th scope="col-1">
+                                    <%=index+1%>
+                                </th>
+                                <td class="col-5">
+                                    <%=article.title%>
+                                </td>
+                                <td class="col-6">
+                                    <!-- Button trigger modal -->
+                                    <a href="/admin/manageArticle/edit/<%=article._id%>" type="submit"
+                                        class="submit_button">Edit</a>
+
+                                    <a href="/admin/deleteArticle/<%=article._id%>" class="submit_button">Delete</a>
+                                </td>
+                            </tr>
+                            <% })%>
+                    </tbody>
+                </table>
+                F
+            </div>
+
+
+            <!--  -->
+        </div>
+
+
+
+        <!-- right side start -->
+        <div class="col-md-6">
+
+            <% if(editForm==='editForm' ) { %>
+
+
+                <form action="/admin/getEdit" class="article_input_form" type="application/x-www-form-urlencoded"
+                    enctype="multipart/form-data" method="POST">
+                    <div class="form-group mt-3">
+                        <label for="title">Title</label><br>
+                        <input class="form-control" name='title' type="text" id='title'
+                            placeholder="Write a unique title" value='<%=singleArticle.title%>'>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="title">Description</label><br>
+                        <textarea name='description' class="form-control" type="text" rows="6" id='title'>
+                            <%=singleArticle.description%>
+                        </textarea>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="image">Article Image</label><br>
+                        <input name='picture' class="form-control" type="file" id='image'
+                            placeholder="Upload article image">
+                    </div>
+                    <input type="submit" class="submit_button mt-3" value="Create">
+
+                </form>
+
+                <% } %>
+
+
+
+
+        </div>
+        <!-- right side start -->
+
+    </div>
+
+
+
+</div>
+<!-- article manage section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- article edit modal start -->
+
+<!-- Modal -->
+<!-- 
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content add_article_section_container">
+            <div class="modal-body">
+
+
+                <div class="add_article_section mt-3">
+                    <p>Edit<span> Article</span></p>
+                    <div class="article_edit_section">
+                        <form action="" class="article_input_form">
+                            <div class="form-group mt-3">
+                                <label for="title">Title</label><br>
+                                <input class="form-control" type="text" id='title' placeholder="Write a unique title">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="title">Description</label><br>
+                                <textarea class="form-control" type="text" rows="6" id='title'
+                                    placeholder="Write a unique title">
+
+                                                            </textarea>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="image">Article Image</label><br>
+                                <input class="form-control" type="file" id='image' placeholder="Upload article image">
+                            </div>
+                            <input type="button" class="submit_button mt-3" value="Create">
+                            <button href='/admin/manageArticle' type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Close</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- article edit modal end -->
