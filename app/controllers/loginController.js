@@ -48,7 +48,6 @@ const adminLogin = async (req, res) => {
 
                 const token = jwt.sign(adminData, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRY });
 
-                // document.cookie="username=John Doe";
                 res.cookie("refreshToken", token, {
                     httpOnly: true,
                     sameSite: "strict",
@@ -67,9 +66,12 @@ const adminLogin = async (req, res) => {
 }
 
 
-
-
-
+// create new admin controller
+const renderLogout =  (req, res) => {
+    res.clearCookie('refreshToken');
+    res.redirect('/')
+              
+}
 
 
 
@@ -78,6 +80,7 @@ const adminLogin = async (req, res) => {
 
 module.exports = {
     renderLoginPage,
+    renderLogout,
     newAdmin,
     adminLogin,
 };

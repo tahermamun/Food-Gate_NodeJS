@@ -1,87 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!--custom CSS -->
-    <link rel="stylesheet" href="<%=router%>stylesheets/admin/dashboard.css" type='text/css'>
-</head>
+    <link
+      rel="stylesheet"
+      href="<%=router%>stylesheets/admin/dashboard.css"
+      type="text/css"
+    />
+  </head>
 
-<body>
+  <body>
     <section id="main_dashboard">
-        <div class="dashboard_sidebar" id="sideNav">
-            <div class="logo_box">
-                <a class="">Mamzz</a>
-            </div>
-            <div class="nav_links">
-                <a class="active_sidebar nav_item" href="/admin"><i
-                        class="fa fa-home side_nav_icon"></i><span>Dashboard</span></a>
-                <a class="nav_item" href="/admin/newArticle"><i class="fa fa-plus-circle icon"></i><span>Add
-                        Article</span></a>
-                <a class="nav_item" href="/admin/manageArticle"><i class="fa fa-database icon"></i><span>Manage
-                        Article</span></a>
-                <a class="nav_item" href="/admin/userSetting"><i class="fa fa-user-cog icon"></i><span>User
-                        Setting</span></a>
-                <a class="nav_item" href="/admin/logOut"><i class="fa fa-sign-out-alt icon"></i><span>Log
-                        Out</span></a>
-            </div>
+      <div class="dashboard_sidebar" id="sideNav">
+        <div class="logo_box">
+          <a class="">FoodGate</a>
         </div>
-        <main id="main_dashboard_body">
-            <!-- dashboard header start -->
-            <div class="header">
-                <div class="sidebar_toggle" id='sidebar_toggle'>
-                    <ul>
-                        <li class="nav_full"><i class="fa fa-bars"></i></li>
-                        <li class="nav_half_hide"><i class="fa fa-bars"></i></li>
-                    </ul>
-                </div>
-                <div class="profile">
-                    <img src="<%=router%>images/user.jpg" class='pro-img' alt="">
-                    <p>Taher Mamun</p>
-                </div>
-            </div>
+        <div class="nav_links">
+          <a class="active_sidebar nav_item" href="/admin"
+            ><i class="fa fa-home side_nav_icon"></i><span>Dashboard</span></a
+          >
+          <a class="nav_item" href="/admin/newArticle"
+            ><i class="fa fa-plus-circle icon"></i><span>Add Article</span></a
+          >
+          <a class="nav_item" href="/admin/manageArticle"
+            ><i class="fa fa-database icon"></i><span>Manage Article</span></a
+          >
+          <a class="nav_item" href="/admin/userSetting"
+            ><i class="fa fa-user-cog icon"></i><span>User Setting</span></a
+          >
+          <a onclick="clearCookie()" class="nav_item" href="/admin/logout"
+            ><i class="fa fa-sign-out-alt icon"></i><span>Log Out</span></a
+          >
+        </div>
+      </div>
+      <main id="main_dashboard_body">
+        <!-- dashboard header start -->
+        <div class="header">
+          <div class="sidebar_toggle" id="sidebar_toggle">
+            <ul>
+              <li class="nav_full"><i class="fa fa-bars"></i></li>
+              <li class="nav_half_hide"><i class="fa fa-bars"></i></li>
+            </ul>
+          </div>
+          <div class="profile">
+            <img src="<%=router%>images/user.jpg" class="pro-img" alt="" />
+            <p>Taher Mamun</p>
+          </div>
+        </div>
 
+        <!-- Add article section -->
 
+        <% if(title==='dashboard' ) { %>
 
-            <!-- Add article section -->
+        <h1 style="color: red; text-align: center; padding-top: 20%">
+          Welcome to your FoodGate Dashboard
+        </h1>
 
-            <% if(title==='dashboard' ) { %>
+        <% } else if(title==='addArticle' ){ %> <%-
+        include('../partials/addArticle.ejs'); %> <% } else
+        if(title==='manageArticle' ){ %> <%-
+        include('../partials/manageArticle.ejs'); %> <% } else
+        if(title==='userSetting' ){ %> <%-
+        include('../partials/userSetting.ejs'); %> <% } %>
+      </main>
 
-                <h1 style='color: red;'>This is admin</h1>
-
-                <% } else if(title==='addArticle' ){ %>
-
-                    <%- include('../partials/addArticle.ejs'); %>
-
-                        <% } else if(title==='manageArticle' ){ %>
-
-                            <%- include('../partials/manageArticle.ejs'); %>
-
-                                <% } else if(title==='userSetting' ){ %>
-
-                                    <%- include('../partials/userSetting.ejs'); %>
-
-                                        <% } %>
-
-        </main>
-
-        <div class="clearfix"></div>
+      <div class="clearfix"></div>
     </section>
 
-
-
-
     <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
     <!-- font awesome js -->
-    <script src="https://kit.fontawesome.com/9b86164490.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9b86164490.js"
+      crossorigin="anonymous"
+    ></script>
 
-</body>
+    <script>
 
+       function clearCookie(){
+        document.cookie = "refreshToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+        redirect('/')
+       }
+
+
+    </script>
+  </body>
 </html>

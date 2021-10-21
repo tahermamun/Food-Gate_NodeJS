@@ -1,5 +1,5 @@
 /*
-* Title: Mamzz Web Application
+* Title: Food-Gate Web Application
 * Description: Food Blog Web Application
 * Author: Taher Mamun
 * Date: 31/08-2021

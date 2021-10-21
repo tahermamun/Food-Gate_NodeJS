@@ -52,6 +52,10 @@ body {
     font-size: 36px;
     color: rgb(13, 204, 61);
     font-weight: 700;
+
+}
+.nav_icon:hover{
+    color: rgb(13, 204, 61);
 }
 
 .nav_links_ul {
@@ -60,8 +64,22 @@ body {
 
 .nav_link_li {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
+}
+
+.nav_link_li:hover {
+    color: rgb(13, 204, 61);
+
+}
+
+.nav_btn{
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #888787;
+    border: none;
+    text-decoration: none;
 }
 
 /* navbar style end */

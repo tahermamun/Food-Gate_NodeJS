@@ -5,7 +5,7 @@ const express = require('express')
 // internal imports
 const router = express.Router()
 const { renderAdminPage, addArticle,chek, getAllArticleAndManageData, deleteArticle, } = require('../controllers/adminController')
-const { renderLoginPage, newAdmin, adminLogin } = require('../controllers/loginController')
+const { renderLoginPage, newAdmin, adminLogin ,renderLogout} = require('../controllers/loginController')
 const { decorateHtmlResponse, decorateRouterResponse } = require('../middlewares/decorateResponse')
 const upload = require('../middlewares/imageUploader')
 const authChecked = require('../middlewares/authChecked')
@@ -28,6 +28,7 @@ router.get('/deleteArticle/:id', deleteArticle)
 
 // authentication Routers
 router.get('/login', decorateRouterResponse('/'), renderLoginPage)
+router.get('/logout', renderLogout)
 router.post('/newAdmin', authChecked, newAdmin)
 router.post('/loginData', adminLogin)
 
